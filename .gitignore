@@ -1,14 +1,35 @@
-.gradle
-/build/
+# Copyright (c) 2017 Juraj Ondruska (juraj.ondr@gmail.com) to Present
+# All rights reserved. Use is subject to license terms.
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# ----------------------------------------------------------------------
+# Section: IntelliJ IDEA
+# ----------------------------------------------------------------------
+**/.idea/
+**/out/
+**/*.iml
+**/*.ipr
+**/*.iws
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# ----------------------------------------------------------------------
+# Section: Gradle
+# ----------------------------------------------------------------------
+**/.gradle/
+**/build/
+**/gradle/
+!**/gradle-wrapper.properties
+!**/gradle-wrapper.jar
 
-# Cache of project
-.gradletasknamecache
+# ----------------------------------------------------------------------
+# Section: Miscallenous
+# ----------------------------------------------------------------------
+**/temp
 
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+# ----------------------------------------------------------------------
+# Section: Git
+# ----------------------------------------------------------------------
+!.gitignore
+
+# ----------------------------------------------------------------------
+# Section: Misc
+# ----------------------------------------------------------------------
+/logs

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes>
+    <process name="proc1">
+        <workdir>workdir1</workdir>
+        <command>command1</command>
+    </process>
+    <process name="proc2">
+        <workdir>workdir2</workdir>
+        <command>command2</command>
+    </process>
+    <process name="proc3">
+        <workdir>workdir3</workdir>
+        <command>command3</command>
+    </process>
+    <process name="proc4">
+        <workdir>workdir4</workdir>
+        <command>command4</command>
+    </process>
+</processes>

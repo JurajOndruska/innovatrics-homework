@@ -1,0 +1,128 @@
+
+/**
+ * Root-project: "Homework"
+ *
+ * A simple multi-project which does not produce any artifacts. It serves just
+ * as a container / runner of its sub-projects.
+ */
+rootProject.name = "Homework"
+
+/*
+ * Sub-project: "Runner"
+ *
+ * A simple java sub-project project which produces artifact(s) with
+ * the maven coordinates "jon.innovatrics.homework:runner".
+ *
+ * The specific gradle sub-project overrides are specified in dedicated
+ * gradle build file "./Runner/build.gradle".
+ *
+ * Meta-Info:
+ * 1) Project Name: "Runner" (default)
+ * 2) Project Directory: "./Runner" (default)
+ */
+include "Runner"
+
+/*
+ * Sub-project: "TaskManager"
+ *
+ * A simple java sub-project project which produces artifact(s) with
+ * the maven coordinates "jon.innovatrics.homework:task-manager".
+ *
+ * The specific gradle sub-project overrides are specified in dedicated
+ * gradle build file "./TaskManager/build.gradle".
+ *
+ * Meta-Info:
+ * 1) Project Name: "TaskManager" (default)
+ * 2) Project Directory: "./TaskManager" (default)
+ */
+include "TaskManager"
+
+/*
+ * Sub-project: "TaskManagerImplementation"
+ *
+ * A simple java sub-project project which produces artifact(s) with
+ * the maven coordinates "jon.innovatrics.homework:task-manager-implementation".
+ *
+ * The specific gradle sub-project overrides are specified in dedicated
+ * gradle build file "./TaskManagerImplementation/build.gradle".
+ *
+ * Meta-Info:
+ * 1) Project Name: "TaskManagerImplementation" (default)
+ * 2) Project Directory: "./TaskManagerImplementation" (default)
+ */
+include "TaskManagerImplementation"
+
+/*
+ * Sub-project: "Tools"
+ *
+ * A simple java sub-project project which produces artifact(s) with
+ * the maven coordinates "jon.innovatrics.homework:tools".
+ *
+ * The specific gradle sub-project overrides are specified in dedicated
+ * gradle build file "./Tools/build.gradle".
+ *
+ * Meta-Info:
+ * 1) Project Name: "Tools" (default)
+ * 2) Project Directory: "./Tools" (default)
+ */
+include "Tools"
+
+/*
+ * Sub-project: "XmlInput"
+ *
+ * A simple java sub-project project which produces artifact(s) with
+ * the maven coordinates "jon.innovatrics.homework:xmlinput".
+ *
+ * The specific gradle sub-project overrides are specified in dedicated
+ * gradle build file "./XmlInput/build.gradle".
+ *
+ * Meta-Info:
+ * 1) Project Name: "XmlInput" (default)
+ * 2) Project Directory: "./XmlInput" (default)
+ */
+include "XmlInput"
+
+/*
+ * Sub-project: "XmlInputImplementation"
+ *
+ * A simple java sub-project project which produces artifact(s) with
+ * the maven coordinates "jon.innovatrics.homework:xmlinput-implementation".
+ *
+ * The specific gradle sub-project overrides are specified in dedicated
+ * gradle build file "./XmlInputImplementation/build.gradle".
+ *
+ * Meta-Info:
+ * 1) Project Name: "XmlInputImplementation" (default)
+ * 2) Project Directory: "./XmlInputImplementation" (default)
+ */
+include "XmlInputImplementation"
+
+/*
+ * Sub-project: "CommandExec"
+ *
+ * A simple java sub-project project which produces artifact(s) with
+ * the maven coordinates "jon.innovatrics.homework:cmdexec".
+ *
+ * The specific gradle sub-project overrides are specified in dedicated
+ * gradle build file "./CommandExec/build.gradle".
+ *
+ * Meta-Info:
+ * 1) Project Name: "CommandExec" (default)
+ * 2) Project Directory: "./CommandExec" (default)
+ */
+include "CommandExec"
+
+/*
+ * Sub-project: "CommandExecImplementation"
+ *
+ * A simple java sub-project project which produces artifact(s) with
+ * the maven coordinates "jon.innovatrics.homework:cmdexec-implementation".
+ *
+ * The specific gradle sub-project overrides are specified in dedicated
+ * gradle build file "./CommandExecImplementation/build.gradle".
+ *
+ * Meta-Info:
+ * 1) Project Name: "CommandExecImplementation" (default)
+ * 2) Project Directory: "./CommandExecImplementation" (default)
+ */
+include "CommandExecImplementation"

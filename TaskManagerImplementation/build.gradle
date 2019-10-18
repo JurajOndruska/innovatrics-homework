@@ -1,0 +1,20 @@
+
+/*
+ * Section: Configuration of Gradle Plugins
+ */
+
+/*
+ * Section: Maven Coordinates
+ */
+group = "jon.innovatrics.homework"
+archivesBaseName = "task-manager-implementation"
+
+/*
+ * Section: Dependencies
+ */
+dependencies {
+
+    compile project(":TaskManager")
+    compile project(":CommandExec")
+}
+

@@ -1,0 +1,34 @@
+
+/*
+ * Section: Configuration of Gradle Plugins
+ */
+apply plugin: "application"
+
+/*
+ * Section: Maven Coordinates
+ */
+group = "jon.innovatrics.homework"
+archivesBaseName = "runner"
+
+dependencies {
+
+    compile project(":XmlInput") 
+    compile project(":TaskManager")
+    runtime project(":TaskManagerImplementation")
+    runtime project(":XmlInputImplementation")
+    runtime project(":CommandExecImplementation")
+}
+
+/*
+ * Section: Customization of the application plugin
+ */
+applicationName = "homework"
+mainClassName = "jon.innovatrics.homework.runner.RunnerApplication"
+
+jar {
+    manifest {
+        attributes (
+            "Main-Class": "${mainClassName}"
+        )
+    }
+}

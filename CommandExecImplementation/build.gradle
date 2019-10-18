@@ -1,0 +1,18 @@
+
+/*
+ * Section: Configuration of Gradle Plugins
+ */
+
+/*
+ * Section: Maven Coordinates
+ */
+group = "jon.innovatrics.homework"
+archivesBaseName = "cmdexec-implementation"
+
+/*
+ * Section: Dependencies
+ */
+dependencies {
+
+    compile project(":CommandExec")
+}
