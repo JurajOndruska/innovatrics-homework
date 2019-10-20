@@ -25,10 +25,32 @@ dependencies {
 applicationName = "homework"
 mainClassName = "jon.innovatrics.homework.runner.RunnerApplication"
 
+/*
+ * Customize JAR packaging
+ */
 jar {
     manifest {
         attributes (
             "Main-Class": "${mainClassName}"
         )
     }
+}
+
+/*
+ * Custom task: The run the demo task
+ */
+task runDemo(type: JavaExec) {
+
+    String xmlFile
+    String homeDirectory
+
+    homeDirectory = project.parent.projectDir.toString()
+    xmlFile = project.parent.projectDir.toPath().resolve("Assignment/windows_processes.xml").normalize().toFile().toString()
+    
+    dependsOn build
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    main = "${mainClassName}"
+    args "${xmlFile}"
+    jvmArgs += ["-Djon.cmdexec.subst.homeDir=${homeDirectory}"]
 }
