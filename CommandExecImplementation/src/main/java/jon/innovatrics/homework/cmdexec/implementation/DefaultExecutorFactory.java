@@ -5,10 +5,7 @@
 
 package jon.innovatrics.homework.cmdexec.implementation;
 
-import org.apache.commons.exec.DefaultExecutor;
-import org.apache.commons.exec.Executor;
-import org.apache.commons.exec.LogOutputStream;
-import org.apache.commons.exec.PumpStreamHandler;
+import org.apache.commons.exec.*;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -45,19 +42,7 @@ final class DefaultExecutorFactory implements ExecutorFactory {
         would be needed which would consume the streams otherwise the
         processes may hang. */
         executor = new DefaultExecutor();
-        executor.setStreamHandler(new PumpStreamHandler(new OutputConsumer()));
+        executor.setStreamHandler(new FixedPumpStreamHandler(new LogOutputStreamConsumer()));
         return executor;
-    }
-
-    /**
-     * A helper class for consuming standard output and error output
-     * from external processes.
-     */
-    private static class OutputConsumer extends LogOutputStream {
-
-        @Override
-        protected void processLine(String line, int logLevel) {
-            /* Do nothing */
-        }
     }
 }

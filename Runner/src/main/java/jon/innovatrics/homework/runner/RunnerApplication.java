@@ -167,7 +167,7 @@ public class RunnerApplication implements CommandLineRunner {
             sb.append("Cleanup (taskId: ").append(taskId)
                 .append("; result: ").append(cancelResult.getEnumValue().toString())
                 .append("; message: ").append(cancelResult.getTextMessage()).append(")");
-            getStandardOutputStream().println();
+            getStandardOutputStream().println(sb.toString());
         }
         getStandardOutputStream().println("Cleanup Done!");
     }
